@@ -25,28 +25,28 @@ nav {
   height: 60px;
 }
 
-ul {
+.hebergementactivite {
   display: flex;
   gap: 70px;
 }
 
-li {
+.hebergementactivite li {
   position: relative;
   max-width: max-content;
   transition: all 0.2s;
 }
 
-li:hover {
+.hebergementactivite li:hover {
   color: var(--main-color);
 }
 
-li::before {
+.hebergementactivite li::before {
   width: 0;
   content: "";
   transition: all 0.2s;
 }
 
-li:hover::before {
+.hebergementactivite li:hover::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -392,13 +392,32 @@ a {
 }
 
 .activite-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   display: flex;
   gap: 15px;
 }
 
 .activites h2 {
   margin: 50px 0 20px;
+}
+/* ******************************** FOOTER ******************************** */
+.footer {
+  background-color: var(--main-bg-color);
+  height: 6%;
+  display: flex;
+  gap: 20%;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-title {
+  font-size: larger;
+  font-weight: 600;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -453,20 +472,20 @@ a {
     margin-top: 0;
   }
 
-  li:hover::before {
+  .hebergementactivite:hover::before {
     top: 35px;
     width: 200%;
     left: -30px;
   }
 
-  li::before {
+  .hebergementactivite::before {
     content: "";
     position: absolute;
-    top: 35px;
-    left: -30px;
+    top: 100px;
+    left: 25%;
     background: var(--main-bg-color);
     height: 2px;
-    width: 200%;
+    width: 50%;
   }
 
   .populaires {
