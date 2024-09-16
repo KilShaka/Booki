@@ -127,17 +127,26 @@ input {
   background-color: #0045ac;
 }
 /* ************************    FILTRES    ************************ */
-.filters {
+.filters-wrapper {
   display: flex;
   gap: 15px;
   align-items: center;
   margin: 30px 0;
   font-weight: 600;
 }
+.filters-btn-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.filters-duo-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
 .filter_btn {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
   border: solid 2px #d1d1d1;
   padding: 13px 17px;
   border-radius: 30px;
@@ -245,7 +254,7 @@ a {
 }
 
 .hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
@@ -254,6 +263,7 @@ a {
 /****** Hebergements ***********/
 .hebergements {
   width: 65%;
+  background-color: var(--main-bg-color);
 }
 
 .hebergements-title {
@@ -310,6 +320,7 @@ a {
 /****** Populaires ***********/
 .populaires {
   width: 32%;
+  background-color: var(--main-bg-color);
 }
 
 .populaires-title {
@@ -359,6 +370,36 @@ a {
   gap: 2px;
 }
 
+/* ******************************** ACTIVITE ******************************** */
+.activite-card img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.activite-card {
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: -1px 7px 18px 0px rgb(22 22 22 / 14%);
+  margin: 0 0 0 15px;
+  flex-shrink: 0;
+}
+.activite-title {
+  padding: 15px;
+}
+
+.activite-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.activites h2 {
+  margin: 50px 0 20px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -394,8 +435,12 @@ a {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
-}
 
+  .filters-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ************************    NAVBAR    ************************ */
@@ -423,7 +468,17 @@ a {
     height: 2px;
     width: 200%;
   }
+
+  .populaires {
+    margin-top: 0;
+  }
+
+  .hebergements-and-populaires section {
+    border-radius: 0;
+  }
+
   /* ************************    FILTRES ET RECHERCHES    ************************ */
+
   #magnifying-glass {
     display: block;
     width: 20px;
@@ -436,12 +491,72 @@ a {
   input {
     position: relative;
     padding-right: 70px;
+    width: 130px;
+    font-size: 1rem;
   }
   #search-btn {
     border-radius: 15px;
     width: 20px;
     position: absolute;
-    left: 320px;
+    left: 260px;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 42%);
+  }
+
+  .filters-btn-wrapper {
+    flex-direction: column;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .filter_btn {
+    min-width: 35%;
+  }
+
+  .hebergements {
+    min-width: 320px;
+    background-color: white;
+  }
+
+  .hebergements-and-populaires {
+    flex-direction: column-reverse;
+  }
+
+  .main-container {
+    padding: 0;
+  }
+
+  .header_wrapper {
+    padding: 0 15px;
+  }
+
+  .populaires-cards {
+    display: block;
+  }
+
+  .hebergements-cards {
+    display: block;
+  }
+  .hebergements-cards .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #hebergements {
+    background-color: white;
+  }
+
+  .formulaire {
+    margin: 30px 0;
+  }
+
+  .hebergements-and-populaires section {
+    padding: 20px;
+  }
+
+  .populaires-cards .card {
+    margin-top: 20px;
+  }
+
+  .filters-duo-wrapper {
+    gap: 10px;
   }
 }

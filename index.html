@@ -24,67 +24,83 @@
     <div class="main-container">
       <header>
         <!-- *********** NAVBAR *********** -->
-        <nav>
-          <a href=""
-            ><img src="./images/logo/Booki@3x.png" alt="logo_booki" id="logo" />
-          </a>
-          <ul>
-            <li><a href="">Hébergements</a></li>
-            <li><a href="">Activités</a></li>
-          </ul>
-        </nav>
-        <!-- *********** FILTRES ET RECHERCHES *********** -->
-        <div class="titre">
-          <h1 class="section-title">
-            Trouvez votre hébergement pour des vacances de rêve
-          </h1>
-          <p>En plein centre-ville ou en pleine nature</p>
-        </div>
-        <!-- FORMULAIRE POUR LA RECHERCHE -->
-        <form action="" class="formulaire">
-          <div id="location-dot-background">
-            <img
-              src="./images/assets/location-dot.svg"
-              alt="location-dot"
-              id="location-dot"
-            />
+        <div class="header_wrapper">
+          <nav>
+            <a href=""
+              ><img
+                src="./images/logo/Booki@3x.png"
+                alt="logo_booki"
+                id="logo"
+              />
+            </a>
+            <ul>
+              <li><a href="#hebergements-ancre">Hébergements</a></li>
+              <li><a href="">Activités</a></li>
+            </ul>
+          </nav>
+          <!-- *********** FILTRES ET RECHERCHES *********** -->
+          <div class="titre">
+            <h1 class="section-title">
+              Trouvez votre hébergement pour des vacances de rêve
+            </h1>
+            <p>En plein centre-ville ou en pleine nature</p>
           </div>
-          <input type="text" />
-          <button id="search-btn">
-            <span id="rechercher">Rechercher</span>
-            <img
-              src="./images/assets/magnifying-glass.svg"
-              alt="magnifying-glass"
-              id="magnifying-glass"
-            />
-          </button>
-        </form>
-        <div class="filters">
-          <p>Filtres</p>
-          <button class="filter_btn">
-            <img src="./images/assets/bill.svg" alt="" />Économique
-          </button>
-          <button class="filter_btn">
-            <img src="./images/assets/person.svg" alt="" id="person" />Familial
-          </button>
-          <button class="filter_btn">
-            <img src="./images/assets/heart.svg" alt="" />Romantique
-          </button>
-          <button class="filter_btn">
-            <img src="./images/assets/fire.svg" alt="" />Nos pépites
-          </button>
-        </div>
-        <div class="info">
-          <div class="info_img">
-            <img src="./images/assets/info.svg" alt="info" />
+          <!-- FORMULAIRE POUR LA RECHERCHE -->
+          <form action="" class="formulaire">
+            <div id="location-dot-background">
+              <img
+                src="./images/assets/location-dot.svg"
+                alt="location-dot"
+                id="location-dot"
+              />
+            </div>
+            <input type="text" />
+            <button id="search-btn">
+              <span id="rechercher">Rechercher</span>
+              <img
+                src="./images/assets/magnifying-glass.svg"
+                alt="magnifying-glass"
+                id="magnifying-glass"
+              />
+            </button>
+          </form>
+          <div class="filters-wrapper">
+            <p>Filtres</p>
+            <div class="filters-btn-wrapper">
+              <div class="filters-duo-wrapper">
+                <button class="filter_btn">
+                  <img src="./images/assets/bill.svg" alt="" />Économique
+                </button>
+                <button class="filter_btn">
+                  <img
+                    src="./images/assets/person.svg"
+                    alt=""
+                    id="person"
+                  />Familial
+                </button>
+              </div>
+              <div class="filters-duo-wrapper">
+                <button class="filter_btn">
+                  <img src="./images/assets/heart.svg" alt="" />Romantique
+                </button>
+                <button class="filter_btn">
+                  <img src="./images/assets/fire.svg" alt="" />Nos pépites
+                </button>
+              </div>
+            </div>
           </div>
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          <div class="info">
+            <div class="info_img">
+              <img src="./images/assets/info.svg" alt="info" />
+            </div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          </div>
         </div>
       </header>
 
       <main>
         <div class="hebergements-and-populaires">
-          <section class="hebergements">
+          <section class="hebergements" id="hebergements-ancre">
             <div class="section-title">Hébergements à Marseille</div>
             <div class="hebergements-cards">
               <a href="">
@@ -331,6 +347,36 @@
             </div>
           </section>
         </div>
+        <!-- ************* SECTION ACTIVITE *************** -->
+        <section class="activites">
+          <h2>Activités à Marseille</h2>
+          <div class="activite-wrapper">
+            <a href="">
+              <article class="activite-card">
+                <img src="./images/activites/reno-laithienne.jpg" alt="" />
+                <h3 class="activite-title">Vieux-port</h3>
+              </article>
+            </a>
+            <a href="">
+              <article class="activite-card">
+                <img src="./images/activites/paul-hermann.jpg" alt="" />
+                <h3 class="activite-title">Fort de Pomègues</h3>
+              </article>
+            </a>
+            <a href="">
+              <article class="activite-card">
+                <img src="./images/activites/kilyan-sockalingum.jpg" alt="" />
+                <h3 class="activite-title">Parc national des Calanques</h3>
+              </article>
+            </a>
+            <a href="">
+              <article class="activite-card">
+                <img src="./images/activites/florian-wehde.jpg" alt="" />
+                <h3 class="activite-title">Notre-Dame-de-la-Garde</h3>
+              </article>
+            </a>
+          </div>
+        </section>
       </main>
       <footer></footer>
     </div>
