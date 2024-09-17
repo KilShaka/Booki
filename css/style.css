@@ -380,21 +380,30 @@ a {
 }
 
 .activite-card {
-  width: 300px;
-  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 90%;
   border-radius: 20px;
-  box-shadow: -1px 7px 18px 0px rgb(22 22 22 / 14%);
-  margin: 0 0 0 15px;
-  flex-shrink: 0;
+  box-shadow: rgb(22 22 22 / 10%) -1px 7px 18px 0px;
+  gap: 20px;
 }
+
 .activite-title {
-  padding: 15px;
+  /* padding: 15px; */
+  font-size: 1.1vw;
+  padding-left: 20px;
 }
 
 .activite-wrapper {
-  margin-bottom: 60px;
   display: flex;
-  gap: 15px;
+  gap: 30px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+}
+
+.activite-wrapper a {
+  width: 100%;
 }
 
 .activites h2 {
@@ -459,6 +468,20 @@ a {
     flex-direction: column;
     align-items: flex-start;
   }
+  .activites h2 {
+    margin: 70px 20px 40px;
+  }
+  .activite-card {
+    height: 85%;
+  }
+
+  .activite-card img {
+    height: 75%;
+  }
+
+  .activite-title {
+    font-size: 1.8vw;
+  }
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -472,12 +495,6 @@ a {
     margin-top: 0;
   }
 
-  .hebergementactivite:hover::before {
-    top: 35px;
-    width: 200%;
-    left: -30px;
-  }
-
   .hebergementactivite::before {
     content: "";
     position: absolute;
@@ -486,6 +503,18 @@ a {
     background: var(--main-bg-color);
     height: 2px;
     width: 50%;
+  }
+
+  .hebergementactivite li:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: var(--main-color);
+    height: 2px;
+    width: 100%;
+    bottom: -12px;
+    /* REINITIALISE LE STYLE PAR DEFAUT */
+    top: auto;
   }
 
   .populaires {
@@ -520,6 +549,11 @@ a {
     left: 260px;
     box-shadow: 0px 3px 6px rgb(0 0 0 / 42%);
   }
+
+  /* .formulaire {
+    align-items: center;
+    justify-content: center;
+  } */
 
   .filters-btn-wrapper {
     flex-direction: column;
@@ -577,5 +611,34 @@ a {
 
   .filters-duo-wrapper {
     gap: 10px;
+  }
+
+  .activite-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .activite-wrapper a {
+    width: 85%;
+  }
+
+  .activite-card img {
+    height: 75%;
+  }
+
+  .activite-card {
+    height: 200px;
+  }
+
+  .activite-title {
+    font-size: 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: 10%;
+    display: flex;
+    gap: 10%;
+    padding: 30px;
   }
 }
