@@ -52,55 +52,59 @@
           </div>
 
           <!-- FORMULAIRE POUR LA RECHERCHE -->
-          <form class="search-form">
-            <div id="location-dot-background">
-              <img
-                src="./images/assets/location-dot.svg"
-                alt="icône de localisation"
-                id="location-dot"
-              />
-            </div>
-            <input type="text" />
-            <button id="search-btn">
-              <span id="search">Rechercher</span>
-              <img
-                src="./images/assets/magnifying-glass.svg"
-                alt="icône de loupe"
-                id="magnifying-glass"
-              />
-            </button>
-          </form>
-          <div class="filters">
-            <p>Filtres</p>
-            <div class="filters__wrapper">
-              <div class="filters__group">
-                <button class="filters__button">
-                  <img
-                    src="./images/assets/bill.svg"
-                    alt="icône de billet"
-                  />Économique
-                </button>
-                <button class="filters__button">
-                  <img
-                    src="./images/assets/person.svg"
-                    alt="icône d'une personne"
-                    id="person"
-                  />Familial
-                </button>
+          <div class="form__wrapper">
+            <form class="search-form">
+              <div id="location-dot-background">
+                <img
+                  src="./images/assets/location-dot.svg"
+                  alt="icône de localisation"
+                  id="location-dot"
+                />
               </div>
-              <div class="filters__group">
-                <button class="filters__button">
-                  <img
-                    src="./images/assets/heart.svg"
-                    alt="icône d'un coeur"
-                  />Romantique
-                </button>
-                <button class="filters__button">
-                  <img
-                    src="./images/assets/fire.svg"
-                    alt="icône d'une flamme"
-                  />Nos pépites
-                </button>
+              <input type="text" />
+              <button id="search-btn">
+                <span id="search">Rechercher</span>
+                <img
+                  src="./images/assets/magnifying-glass.svg"
+                  alt="icône de loupe"
+                  id="magnifying-glass"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="filters">
+            <div class="filters-content">
+              <p>Filtres</p>
+              <div class="filters__wrapper">
+                <div class="filters__group">
+                  <button class="filters__button">
+                    <img
+                      src="./images/assets/bill.svg"
+                      alt="icône de billet"
+                    />Économique
+                  </button>
+                  <button class="filters__button">
+                    <img
+                      src="./images/assets/person.svg"
+                      alt="icône d'une personne"
+                      id="person"
+                    />Familial
+                  </button>
+                </div>
+                <div class="filters__group">
+                  <button class="filters__button">
+                    <img
+                      src="./images/assets/heart.svg"
+                      alt="icône d'un coeur"
+                    />Romantique
+                  </button>
+                  <button class="filters__button">
+                    <img
+                      src="./images/assets/fire.svg"
+                      alt="icône d'une flamme"
+                    />Nos pépites
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -288,7 +292,7 @@
                 </article>
               </a>
             </div>
-            <h3 class="see-more">Afficher plus</h3>
+            <h3 class="see-more"><a href="">Afficher plus</a></h3>
           </section>
 
           <!-- ************* SECTION POPULAR *************** -->
@@ -433,7 +437,7 @@
         <div>
           <ul class="footer__container">
             <li>
-              <span class="footer__title">A propos</span>
+              <span class="footer__title">À propos</span>
             </li>
             <li><a href="">Fonctionnement du site</a></li>
             <li><a href="">Conditions générales</a></li>
